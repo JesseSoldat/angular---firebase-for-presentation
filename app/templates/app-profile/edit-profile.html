@@ -1,4 +1,4 @@
-<div class="layoutEditProfile">
+<div class="layoutEditProfile" ng-show="data.length <= 0">
 	<h3>Add Profile</h3>
 	<br>
 	<form ng-submit="addProfile(user)">
@@ -33,4 +33,44 @@
 		<button class="small button">Submit</button>
 	</form>
 	<hr>
+</div>
+
+<div class="layoutEditProfile" ng-repeat="d in data" ng-show="data.length > 0">
+	<h3>Edit Profile</h3>
+	<br>
+	<form ng-submit="editProfile(d)">
+		<input type="text"
+		placeholder="First Name"
+		ng-model="d.fName"
+		required="">
+		<input type="text"
+		placeholder="Last Name"
+		ng-model="d.lName"
+		required="">
+		<input type="text"
+		placeholder="Address"
+		ng-model="d.address"
+		required="">
+		<input type="text"
+		placeholder="City"
+		ng-model="d.city"
+		required="">
+		<input type="text"
+		placeholder="State"
+		ng-model="d.state"
+		required="">
+		<input type="text"
+		placeholder="Zip Code"
+		ng-model="d.zip"
+		required="">
+		<input type="text"
+		placeholder="Country"
+		ng-model="d.country"
+		required="">
+		<button class="small button">Submit</button>
+	</form>
+</div>
+
+<div class="layoutAvatar">
+	<h3>Upload your Avatar</h3>
 </div>
