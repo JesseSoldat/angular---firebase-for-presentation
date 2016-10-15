@@ -20,6 +20,7 @@ let EditProfileCtrl = function($scope, $state, ProfileService){
 
 	$scope.editProfile = function(user){
 		ProfileService.editProfile(user);
+		$state.go('root.profile');
 	}
 
 }

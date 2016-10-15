@@ -8631,4 +8631,17 @@ nav {
   margin: 0 auto;
   margin-top: 2%; }
 
+.layoutAvatar {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: .5%; }
+  .layoutAvatar #fileUploadControls {
+    display: inline-block;
+    width: 60%; }
+    .layoutAvatar #fileUploadControls progress {
+      width: 90%; }
+  .layoutAvatar button {
+    display: inline-block;
+    vertical-align: top; }
+
 /*# sourceMappingURL=main.css.map */
