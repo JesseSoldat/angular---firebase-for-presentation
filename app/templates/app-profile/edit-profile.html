@@ -1,0 +1,36 @@
+<div class="layoutEditProfile">
+	<h3>Add Profile</h3>
+	<br>
+	<form ng-submit="addProfile(user)">
+		<input type="text"
+		placeholder="First Name"
+		ng-model="user.fName"
+		required="">
+		<input type="text"
+		placeholder="Last Name"
+		ng-model="user.lName"
+		required="">
+		<input type="text"
+		placeholder="Address"
+		ng-model="user.address"
+		required="">
+		<input type="text"
+		placeholder="City"
+		ng-model="user.city"
+		required="">
+		<input type="text"
+		placeholder="State"
+		ng-model="user.state"
+		required="">
+		<input type="text"
+		placeholder="Zip Code"
+		ng-model="user.zip"
+		required="">
+		<input type="text"
+		placeholder="Country"
+		ng-model="user.country"
+		required="">
+		<button class="small button">Submit</button>
+	</form>
+	<hr>
+</div>

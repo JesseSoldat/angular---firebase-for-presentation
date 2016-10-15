@@ -1,6 +1,7 @@
 @import 'foundation';
 @import 'font-awesome';
 
+//Site Layout ----------------------------
 body {
   background: #e2ebf3;
 }
@@ -10,8 +11,16 @@ body {
 	margin: 0 auto;
 }
 
-li{
-	
+.layoutForm {
+	width: 90%;
+	margin: 0 auto;
+}
+.layoutBtns {
+	margin-left: 5%;
+
+	button {
+		margin-right: 1%;
+	}
 }
 
 //Layout-----------------
@@ -31,4 +40,39 @@ nav {
 			}
 		}
 	}
+}
+
+//Profile----------------------
+.profileWrapper {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 1%;
+
+	.layoutProfile {
+		h3 {
+			display: inline-block;
+			margin: 0 3% 0 0;
+		}
+		button {
+			vertical-align: middle;
+			display: inline-block;
+			margin: 0;
+		}
+	}
+}
+.profileInfo {
+	width: 40%;
+	h4 {
+		line-spacing: 1.5em;
+	}
+	.profileImg {
+		width: 40%;
+	}
+}
+
+//EditProfile
+.layoutEditProfile {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 2%;
 }

@@ -8,6 +8,7 @@ let config = function($stateProvider, $urlRouterProvider){
 			controller: 'LayoutCtrl',
 			templateUrl: 'templates/app-core/layout.html'
 		})
+		//app-core
 		.state('root.dash', {
 			url: '/',
 			controller: 'DashCtrl',
@@ -22,6 +23,18 @@ let config = function($stateProvider, $urlRouterProvider){
 			url: '/register',
 			controller: 'LoginCtrl',
 			templateUrl: 'templates/app-core/register.html'
+		})
+
+		//app-profile
+		.state('root.profile', {
+			url: '/profile',
+			controller: 'ProfileCtrl',
+			templateUrl: 'templates/app-profile/profile.html'
+		})
+		.state('root.editProfile', {
+			url: '/editprofile',
+			controller: 'EditProfileCtrl',
+			templateUrl: 'templates/app-profile/edit-profile.html'
 		})
 		;
 
