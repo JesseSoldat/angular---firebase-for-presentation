@@ -42,16 +42,47 @@ nav {
 	}
 }
 
-//File-Upload Directive
-// .fileUploadProgress {
-// 	display: inline-block;
-// 	width: 40%;
-// }
-// .fileUploadInput {
-// 	display: inline-block;
-// 	width: 40%;
-// }
 
+//Dash-------------------------
+#dashBackground {
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 900px;
+	position: relative;
+	-webkit-transition: all 2s ease 2s;
+	transition: all 2s ease 2s;
+	button {
+		position: absolute;
+		top: 1%;
+		left: 3%;
+		opacity: 0;
+	}
+}
+#dashBackground:hover > button {
+	opacity: 1;
+}
+
+//Edit Dash----------------------
+#layoutEditDash {
+	width: 80%;
+	margin-top: .5%;
+	h3 {
+		margin-left: 5%;
+	}
+	#fileUploadControls {
+		display: inline-block;
+		width: 70%;
+
+		progress {
+			width: 85%;
+		}
+	}
+	button {
+		display: inline-block;
+		vertical-align: top;
+	}
+}
 //Profile----------------------
 .profileWrapper {
 	width: 80%;

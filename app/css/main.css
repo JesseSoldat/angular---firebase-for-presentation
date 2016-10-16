@@ -8607,6 +8607,37 @@ nav {
         display: inline-block;
         margin-right: 5%; }
 
+#dashBackground {
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 900px;
+  position: relative;
+  -webkit-transition: all 2s ease 2s;
+  transition: all 2s ease 2s; }
+  #dashBackground button {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    opacity: 0; }
+
+#dashBackground:hover > button {
+  opacity: 1; }
+
+#layoutEditDash {
+  width: 80%;
+  margin-top: .5%; }
+  #layoutEditDash h3 {
+    margin-left: 5%; }
+  #layoutEditDash #fileUploadControls {
+    display: inline-block;
+    width: 70%; }
+    #layoutEditDash #fileUploadControls progress {
+      width: 85%; }
+  #layoutEditDash button {
+    display: inline-block;
+    vertical-align: top; }
+
 .profileWrapper {
   width: 80%;
   margin: 0 auto;

@@ -14,6 +14,10 @@ let config = function($stateProvider, $urlRouterProvider){
 			controller: 'DashCtrl',
 			templateUrl: 'templates/app-core/dash.html'
 		})
+		.state('root.editDash', {
+			url: '/editdash',
+			templateUrl: 'templates/app-core/edit-dash.html'
+		})
 		.state('login', {
 			url: '/login',
 			controller: 'LoginCtrl',
@@ -36,6 +40,7 @@ let config = function($stateProvider, $urlRouterProvider){
 			controller: 'EditProfileCtrl',
 			templateUrl: 'templates/app-profile/edit-profile.html'
 		})
+
 		;
 
 }
